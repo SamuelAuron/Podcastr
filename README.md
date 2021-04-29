@@ -2,10 +2,6 @@
   <img src="https://github.com/gabriel-nt/podcastr/blob/main/public/logo.svg" alt="logo" height="50"/>
 </h4>
 
-<h1 align="center">
-    🚀 Podcastr
-</h1>
-
 <p align="center">Aplicação desenvolvida durante a NLW5 na trilha de React</p>
 
 <p align="center">
