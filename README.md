@@ -40,7 +40,7 @@
 O Podcastr é uma aplicação que visa armazenar uma lista de podcast de uma determinada empresa, e permite o usuário a escolher o episódio desejado e ouvir pela plataforma, assim como ler as informações sobre o mesmo. Esse Projeto foi desenvolvido durante a semana do Next Level Week 5ª Edição. 
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/podcastr/blob/main/src/assets/home.png" />
+<img src="https://github.com/SamuelAuron/Podcastr/blob/master/public/home.PNG" />
 
 ### ⚙ Pré-requisitos
 
