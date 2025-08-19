@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import episodesData from '../data/episodes.json';
 import { format, parseISO } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'; 
 import Image from 'next/image';
@@ -121,16 +122,7 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api
-    .get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  });
-  
-  const episodes = data.map(episode => {
+  const episodes = episodesData.episodes.map(episode => {
     return {
       id: episode.id,
       title: episode.title,
@@ -144,7 +136,7 @@ export const getStaticProps: GetStaticProps = async () => {
   })
 
   const latestEpisodes = episodes.slice(0, 2);
-  const allEpisodes = episodes.slice(2, episodes.lenght);
+  const allEpisodes = episodes.slice(2, episodes.length);
 
   return{
     props: {
