@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    
+    "server": "json-server server.json -p 3333"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
